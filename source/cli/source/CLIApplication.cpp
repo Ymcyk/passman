@@ -19,11 +19,11 @@ CLIApplication::CLIApplication() :
 
 CLIApplication::~CLIApplication() = default;
 
-void CLIApplication::setup() {
+void CLIApplication::setup() const {
 	_pimpl->setup();
 }
 
-int CLIApplication::parse(int argc, char** argv) {
+int CLIApplication::parse(int argc, char** argv) const {
 	return _pimpl->parse(argc, argv);
 }
 

@@ -12,8 +12,8 @@ namespace passman {
 		CLIApplication();
 		~CLIApplication();
 
-		void setup();
-		int parse(int argc, char** argv);
+		void setup() const;
+		int parse(int argc, char** argv) const;
 
 	private:
 		std::unique_ptr<Pimpl> _pimpl;
