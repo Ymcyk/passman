@@ -1,6 +1,7 @@
 #include "CLIApplication.hpp"
 
 #include "CLI11/CLI11.hpp"
+#include <cstdlib>
 
 using namespace passman;
 
@@ -34,4 +35,5 @@ void CLIApplication::Pimpl::setup() {
 
 int CLIApplication::Pimpl::parse(int argc, char** argv) {
 	CLI11_PARSE(app, argc, argv);
+	return EXIT_SUCCESS;
 }

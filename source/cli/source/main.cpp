@@ -6,5 +6,5 @@ int main(int argc, char** argv) {
 	passman::CLIApplication app;
 
 	app.setup();
-	app.parse(argc, argv);
+	return app.parse(argc, argv);
 }
